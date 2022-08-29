@@ -36,7 +36,7 @@ function App() {
       { loading ? <strong>Loading...</strong> : 
       <form>
         <label for="select">Please select coin.</label><br></br>
-        <select id="select" onChange={changeMoney}>
+        <select id="select" required onChange={changeMoney}>
         <option>Select Coin.</option>
         {coins.map((coin) => (
         <option value={coin.quotes.USD.price}>
